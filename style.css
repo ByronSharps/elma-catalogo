@@ -28,6 +28,71 @@ body {
 }
 
 .frame {
-  border: 0.5px solid var(--h1-decoration);
+  border: 0.5px solid;
+  border-image: linear-gradient(
+    29deg,
+    rgba(255, 215, 0, 1) 0%,
+    rgba(255, 215, 0, 1) 35%,
+    rgba(235, 235, 235, 1) 50%,
+    rgba(255, 215, 0, 1) 65%,
+    rgba(255, 215, 0, 1) 100%
+  );
+  border-image-slice: 1;
   height: 100%;
+}
+
+#elma_logo {
+  margin: 21px auto 10px auto;
+  display: block;
+}
+
+.frame h1 {
+  color: var(--h1-decoration);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 40px;
+  background: linear-gradient(
+    -3deg,
+    rgba(255, 215, 0, 1) 0%,
+    rgba(212, 175, 55, 1) 35%,
+    rgba(235, 235, 235, 1) 50%,
+    rgba(212, 175, 55, 1) 65%,
+    rgba(212, 175, 55, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.division-line {
+  border-top: 0.5px solid var(--gold);
+  margin: 28px 33px;
+}
+
+.frame h2 {
+  color: var(--h1-decoration);
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-size: 28px;
+  background: linear-gradient(
+    -3deg,
+    rgba(255, 215, 0, 1) 0%,
+    rgba(212, 175, 55, 1) 35%,
+    rgba(235, 235, 235, 1) 50%,
+    rgba(212, 175, 55, 1) 65%,
+    rgba(212, 175, 55, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#union {
+  margin: 65px auto 52px auto;
+  display: block;
+  transition: ease 0.5s;
+}
+
+#union:hover {
+  transform: scale(1.1);
 }
